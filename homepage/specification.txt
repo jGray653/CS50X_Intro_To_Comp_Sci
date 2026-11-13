@@ -1,0 +1,22 @@
+HTML tags:
+1. header
+2. h1
+3. nav
+4. a
+5. main
+6. footer
+7. h2
+8. p
+9. input
+10. button
+
+CSS Properties:
+1. background-color
+2. color
+3. padding
+4. border-radius
+5. max-width
+
+JavaScript & Bootstrap Explanation:
+I have used javascript to impliment text box that, on submission, checks if there has been any input.
+I used bootstrap in interest.html to create a series of three collumns as per their documentation.

@@ -1,0 +1,62 @@
+body {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    background-color: grey;
+}
+
+nav {
+    background-color: #555;
+}
+
+nav a {
+    color: lightblue;
+}
+
+nav a:hover {
+    color: lightgreen;
+}
+
+nav a:active {
+    color: lightpink;
+}
+
+nav a:visited {
+    color: lightblue;
+}
+
+.section {
+    background-color: rgb(150,150,150,0.75);
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #555;
+    padding-bottom: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 1000px;
+}
+
+footer a {
+    color: lightblue;
+}
+
+footer a:hover {
+    color: lightgreen;
+}
+
+footer a:active {
+    color: lightpink;
+}
+
+footer a:visited {
+    color: lightblue;
+}

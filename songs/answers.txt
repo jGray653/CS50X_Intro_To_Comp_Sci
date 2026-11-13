@@ -1,0 +1,6 @@
+Id categorise this listener as purple.
+
+The way this is calculated is flawed as data cannot accurately contain all of a person's listening habits.
+The decision to factor in energy and danceability as two separate datapoints likely does not reflect accurately on how likely a person is actually going to dance to the music they are listening to, nor the different types of dances that exist.
+I would do this better by taking a pool of their genres and basing the reading off of the ones that show up most often with a subcategory or two of the next most often.
+These are much more likely to get an acurate reading off of the type of person listening to music.

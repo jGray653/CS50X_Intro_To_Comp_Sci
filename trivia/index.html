@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                let body = document.querySelector('body');
+                document.querySelector('#yes').addEventListener('click', function() {
+                    document.getElementById('yes').style.background='red';
+                    document.getElementById('no').style.background='inherit';
+                    document.getElementById('which').style.background='inherit';
+                    document.querySelector('#p1').textContent = 'INCORRECT';
+                });
+                document.querySelector('#no').addEventListener('click', function() {
+                    document.getElementById('no').style.background='red';
+                    document.getElementById('yes').style.background='inherit';
+                    document.getElementById('which').style.background='inherit';
+                    document.querySelector('#p1').textContent = 'INCORRECT';
+                });
+                document.querySelector('#which').addEventListener('click', function() {
+                    document.getElementById('which').style.background='green';
+                    document.getElementById('yes').style.background='inherit';
+                    document.getElementById('no').style.background='inherit';
+                    document.querySelector('#p1').textContent = 'CORRECT';
+                })
+            });
+
+            function freetext() {
+                    var input = document.getElementById("input");
+                    if(input.value=="Thanks, I got them from the president")
+                    {
+                        document.getElementById('p2').innerHTML= 'Correct';
+                    }
+                    else
+                    {
+                        document.getElementById('p2').innerHTML= 'Wrong';
+                    }
+                }
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                 <h3>Do you like the color of the sky?</h3>
+                 <button id="yes">Yes</button>
+                 <button id="no">No</button>
+                 <button id="which">Which one?</button>
+                 <p id='p1'></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>I like your shoelaces</h3>
+                <input type="text" id="input">
+                <button type="button" value="click" onclick="freetext()">Submit</button>
+                <p id="p2"></p>
+            </div>
+        </div>
+    </body>
+</html>
